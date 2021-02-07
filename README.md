@@ -3,14 +3,21 @@
 ### An easy to use index of all SpaceX rockets.
 
 This is an example Flutter project made and fully live coded during the #30DaysOfFlutter event, lasting through all of February 2021.
+
 Find out more here: http://goo.gle/30daysofflutter
 
 ## Episodes
 
-Every wednesday in February 2021 during the #HumpDayQandA livestreams, [Jay (@jeroen-meijer)](https://github.com/jeroen-meijer) will work on this example applications and answer your questions live on stream. All livestreams are hosted and recorded on [the Flutter Community YouTube channel](https://www.youtube.com/channel/UCNUzIz3TsiHSbgn_66kLIww).
+Every wednesday in February 2021 during the #HumpDayQandA livestreams, [Jay (@jeroen-meijer)](https://github.com/jeroen-meijer) will work on this app and answer your questions live on stream.
+
+All livestreams are hosted and recorded on [the Flutter Community YouTube channel](https://www.youtube.com/channel/UCNUzIz3TsiHSbgn_66kLIww).
 
 After every episode, the progress up to that point can be viewed using the tags in this repository.
 For example, after episode 1, a tag named `episode-1` will be created so everybody can see the progress, follow along and try to work on continuing the project.
+
+## API
+
+In this project, we'll make use of the unofficial SpaceX API. Find out more here: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
 
 ## Usage
 
