@@ -1,0 +1,26 @@
+name: rocket_guide
+description: An easy to use index of all SpaceX rockets.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Allows us to easily use custom fonts from Google Fonts.
+  google_fonts: ^1.1.2
+  # Used for state management.
+  provider: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
