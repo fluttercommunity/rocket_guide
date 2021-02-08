@@ -19,18 +19,24 @@ class RocketListTile extends StatelessWidget {
       onTap: onTap,
       leading: rocket.flickrImages.isEmpty
           ? null
-          : Material(
-              clipBehavior: Clip.antiAlias,
-              borderRadius: BorderRadius.circular(8.0),
-              child: AspectRatio(
-                aspectRatio: 3 / 2,
-                child: Image.network(
-                  rocket.flickrImages.first,
-                  fit: BoxFit.cover,
+          : Hero(
+              tag: 'hero-${rocket.id}-image',
+              child: Material(
+                clipBehavior: Clip.antiAlias,
+                borderRadius: BorderRadius.circular(8.0),
+                child: AspectRatio(
+                  aspectRatio: 3 / 2,
+                  child: Image.network(
+                    rocket.flickrImages.first,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
-      title: Text(rocket.name),
+      title: Hero(
+        tag: 'hero-${rocket.id}-name',
+        child: Text(rocket.name),
+      ),
       subtitle: Text(
         rocket.description,
         maxLines: 2,
