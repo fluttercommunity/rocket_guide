@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rocket_guide/backend/models/rocket.dart';
+import 'package:rocket_guide/backend/backend.dart';
 
 class RocketListTile extends StatelessWidget {
   const RocketListTile({

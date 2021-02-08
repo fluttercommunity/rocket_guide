@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rocket_guide/backend/models/rocket.dart';
+import 'package:rocket_guide/backend/backend.dart';
 
 class RocketDetailsScreen extends StatelessWidget {
   const RocketDetailsScreen({
@@ -20,22 +20,7 @@ class RocketDetailsScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          if (rocket.flickrImages.isNotEmpty)
-            SizedBox(
-              height: 250,
-              child: Hero(
-                tag: 'hero-${rocket.id}-image',
-                child: PageView(
-                  children: [
-                    for (final url in rocket.flickrImages)
-                      Image.network(
-                        url,
-                        fit: BoxFit.cover,
-                      ),
-                  ],
-                ),
-              ),
-            ),
+          if (rocket.flickrImages.isNotEmpty) _ImageHeader(rocket: rocket),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
@@ -54,6 +39,34 @@ class RocketDetailsScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _ImageHeader extends StatelessWidget {
+  const _ImageHeader({
+    Key key,
+    @required this.rocket,
+  }) : super(key: key);
+
+  final Rocket rocket;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 250,
+      child: Hero(
+        tag: 'hero-${rocket.id}-image',
+        child: PageView(
+          children: [
+            for (final url in rocket.flickrImages)
+              Image.network(
+                url,
+                fit: BoxFit.cover,
+              ),
+          ],
+        ),
       ),
     );
   }
