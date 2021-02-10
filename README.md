@@ -1,6 +1,10 @@
 # Rocket Guide
 
-### An easy to use index of all SpaceX rockets.
+## An easy to use index of all SpaceX rockets.
+
+### [To check the code from the latest episode, click here.](https://github.com/fluttercommunity/rocket_guide/tree/episode-1)
+
+---
 
 This is an example Flutter project made and fully live coded during the #30DaysOfFlutter event, lasting through all of February 2021.
 
