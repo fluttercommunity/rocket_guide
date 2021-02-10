@@ -8,7 +8,8 @@ class Backend {
   Future<List<Rocket>> getRockets() async {
     final url = '$hostUrl/rockets';
 
-    // TODO: Remove the line below and add an api call here that uses the url above to fetch rockets!
+    // TODO: Remove the "return " line below and add an API call here
+    // that uses the url above to fetch all rockets!
 
     return const [
       Rocket(
