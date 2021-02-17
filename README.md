@@ -2,7 +2,7 @@
 
 ## An easy to use index of all SpaceX rockets.
 
-### [To check the code from the latest episode, click here.](https://github.com/fluttercommunity/rocket_guide/tree/episode-1)
+### [To check the code from the latest episode, click here.](https://github.com/fluttercommunity/rocket_guide/tree/episode-2)
 
 ---
 
