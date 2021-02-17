@@ -10,6 +10,8 @@ class AppTheme {
       accentColor: _accentColor,
       textTheme: textTheme,
       primaryTextTheme: textTheme,
+      dividerTheme: _dividerTheme,
+      elevatedButtonTheme: _elevatedButtonTheme,
     );
   }
 
@@ -22,11 +24,25 @@ class AppTheme {
       accentColor: _accentColor,
       textTheme: textTheme,
       primaryTextTheme: textTheme,
+      dividerTheme: _dividerTheme,
+      elevatedButtonTheme: _elevatedButtonTheme,
     );
   }
 
   static const _primaryColor = Colors.black;
   static const _accentColor = Colors.white;
+
+  static const _dividerTheme = DividerThemeData(
+    indent: 16.0,
+    space: 0.0,
+  );
+
+  static final _elevatedButtonTheme = ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      primary: _primaryColor,
+      onPrimary: _accentColor,
+    ),
+  );
 
   static _getTextTheme({@required Brightness brightness}) {
     final themeData = ThemeData(brightness: brightness);

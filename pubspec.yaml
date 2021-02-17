@@ -16,6 +16,10 @@ dependencies:
   google_fonts: ^1.1.2
   # Used for state management.
   provider: ^4.3.3
+  # Used for custom icons.
+  ant_icons: ^1.0.0
+  # Used for opening the native browser.
+  url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
